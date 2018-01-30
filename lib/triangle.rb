@@ -1,5 +1,3 @@
-require_relative 'pry'
-
 class Triangle
   attr_reader :kind
 
