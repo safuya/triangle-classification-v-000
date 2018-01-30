@@ -1,10 +1,11 @@
 require 'pry'
 
-class Triangleattr_reader :kind
+class Triangle
+  attr_reader :kind
 
   def initialize(x, y, z)
     if x <= 0 || y <= 0 || z <= 0
-      raise TriangleError
+      raise TriangleError.new
     elsif [x, y, z].uniq.length == 1
       @kind = :equilateral
     elsif [x, y, z].uniq.length == 2
