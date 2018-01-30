@@ -7,7 +7,7 @@ class Triangle
   def initialize(x, y, z)
     binding.pry
     if x <= 0 || y <= 0 || z <= 0
-      raise Error
+      raise TriangleError
     elsif [x, y, z].uniq.length == 1
       @kind = :equilateral
     elsif [x, y, z].uniq.length == 2
