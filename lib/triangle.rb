@@ -6,7 +6,7 @@ class Triangle
   def initialize(x, y, z)
     if x <= 0 || y <= 0 || z <= 0
       raise TriangleError
-    elsif array_inequality_broken?([x, y, z])
+    elsif inequality_broken?([x, y, z])
       raise TriangleError
     elsif [x, y, z].uniq.length == 1
       @kind = :equilateral
