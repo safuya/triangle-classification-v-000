@@ -4,7 +4,6 @@ class Triangle
   attr_reader :kind
 
   def initialize(x, y, z)
-    binding.pry
     if x <= 0 || y <= 0 || z <= 0
       binding.pry
       raise TriangleError
