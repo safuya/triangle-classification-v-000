@@ -17,8 +17,6 @@ class Triangle
     end
   end
 
-  def has_no_size?
-
   def inequality_broken?(array)
     array.max >= array.min + array.sort[-2]
   end
