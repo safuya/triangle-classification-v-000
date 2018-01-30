@@ -4,7 +4,7 @@ class Triangle
   attr_reader :kind
 
   def initialize(x, y, z)
-    if x <= 0 || y <= 0 || z <= 0
+    if no_size?([x, y, z])
       raise TriangleError
     elsif inequality_broken?([x, y, z])
       raise TriangleError
