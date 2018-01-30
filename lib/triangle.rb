@@ -8,7 +8,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => e
-        e.message "Invalid triangle"
+        e.message
       end
     elsif [x, y, z].uniq.length == 1
       @kind = :equilateral
