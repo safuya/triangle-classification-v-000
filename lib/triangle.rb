@@ -1,6 +1,7 @@
 require 'pry'
 
 class Triangle
+  extend TriangleError
   attr_reader :kind
 
   def initialize(x, y, z)
@@ -23,4 +24,3 @@ class TriangleError < StandardError
     "This is a triangle error."
   end
 end
-
