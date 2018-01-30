@@ -1,8 +1,6 @@
 require 'pry'
 
-class Triangle
-  extend TriangleError
-  attr_reader :kind
+class Triangleattr_reader :kind
 
   def initialize(x, y, z)
     if x <= 0 || y <= 0 || z <= 0
