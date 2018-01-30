@@ -18,7 +18,7 @@ class Triangle
   end
 
   def triangle_inequality_broken?(array)
-    array.max < array.min + array.sort[-2]
+    array.max >= array.min + array.sort[-2]
   end
 
   class TriangleError < StandardError
