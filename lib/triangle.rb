@@ -17,6 +17,10 @@ class Triangle
     end
   end
 
+  def no_size?(array)
+    array.any? { |num| num <= 0 }
+  end
+
   def inequality_broken?(array)
     array.max >= array.min + array.sort[-2]
   end
